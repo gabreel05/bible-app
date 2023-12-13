@@ -1,3 +1,3 @@
-# state_management
+# bible_app
 
-A new Flutter project.
+A Bible App project for study purposes.
