@@ -15,9 +15,3 @@ class VerseController extends GetxController {
         await VerseRepository().getChapterVerses(version, abbrev, chapter);
   }
 }
-
-void main(List<String> args) {
-  final controller = VerseController();
-  controller.getVerses('ra', 'gn', 1);
-  print(controller.verses);
-}

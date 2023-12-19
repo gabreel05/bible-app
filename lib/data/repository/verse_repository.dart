@@ -36,10 +36,3 @@ class Verse {
     );
   }
 }
-
-void main(List<String> args) {
-  final repository = VerseRepository();
-  repository.getChapterVerses('ra', 'gn', 1).then((value) => {
-        for (var verse in value) {print("${verse.number} - ${verse.text}")}
-      });
-}
