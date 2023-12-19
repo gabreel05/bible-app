@@ -23,6 +23,10 @@ class BibleApp extends StatelessWidget {
     Get.put<GetStorage>(GetStorage());
 
     return GetMaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.yellow,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       getPages: <GetPage>[

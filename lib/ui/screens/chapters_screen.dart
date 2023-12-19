@@ -15,7 +15,14 @@ class ChaptersScreen extends StatelessWidget {
       builder: (builder) {
         return Scaffold(
           appBar: AppBar(
-            title: Text("${Get.arguments.name}"),
+            backgroundColor: Colors.yellow,
+            title: Text(
+              "${Get.arguments.name}",
+              style: const TextStyle(
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Corben',
+              ),
+            ),
             centerTitle: true,
           ),
           body: GridView.count(
@@ -37,7 +44,7 @@ class ChaptersScreen extends StatelessWidget {
                       child: Center(
                         child: Text(
                           '${index + 1}',
-                          style: Theme.of(context).textTheme.displayMedium,
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                       ),
                     ),

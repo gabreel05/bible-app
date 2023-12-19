@@ -13,7 +13,11 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Bíblia Sagrada'),
+        backgroundColor: Colors.yellow,
+        title: const Text(
+          'Bíblia Sagrada',
+          style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Corben'),
+        ),
         centerTitle: true,
       ),
       body: Center(

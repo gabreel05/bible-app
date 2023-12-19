@@ -16,8 +16,13 @@ class VersesScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.yellow,
         title: Text(
           "${book.name} - Capítulo ${box.read('book_chapter')}",
+          style: const TextStyle(
+            fontWeight: FontWeight.bold,
+            fontFamily: 'Corben',
+          ),
         ),
         centerTitle: true,
       ),
